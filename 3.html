@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计时器</title>
+    <link rel="stylesheet" href="3.css">
+</head>
+<body>
+
+    <!-- <button>显示当前系统时间</button>
+    <div>xxx</div> -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div>123</div>
+    <script>
+       /*  var btn = document.querySelector('button');
+        var div = document.querySelector('div'); */
+
+        var div = document.querySelector('div');
+        
+
+        /* btn.onclick = function() {
+            setInterval(tracex,10);
+        } */
+
+        /* function tracex() {
+            div.innerText = getDate();
+        } */
+
+        function traceppp() {
+            div.innerText = getDate();
+        }
+
+        function getDate() {
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth() + 1;
+            var dates = date.getDate();
+            var arr = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六']
+            var day = date.getDay();
+
+            var h = date.getHours();
+            h = h < 10? '0' + h : h;
+            var m = date.getMinutes();
+            m = m < 10? '0' + m : m;
+            var s = date.getSeconds();
+            s = s < 10? '0' + s : s;
+
+            return '今天是' + year + '年' + month + '月' + dates + '日 ' + arr[day] 
+            + ' ' + h + ':' + m + ':' + s;
+        }
+
+        traceppp();
+        setInterval(traceppp,1000);
+    </script>
+
+</body>
+</html>

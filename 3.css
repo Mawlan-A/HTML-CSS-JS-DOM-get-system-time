@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(1, 1, 27);
+}
+
+div {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-weight: 100;
+    font-size: 28px;
+    font-style: normal;
+    text-align: center;
+    color: #61dafb;
+}
